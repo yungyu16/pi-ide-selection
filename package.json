@@ -1,0 +1,55 @@
+{
+  "name": "pi-ide-selection",
+  "version": "0.1.0",
+  "private": true,
+  "description": "复用 Claude Code IDE 插件，将编辑器选区作为独立上下文消息提供给 Pi。",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungyu16/pi-ide-selection.git"
+  },
+  "homepage": "https://github.com/yungyu16/pi-ide-selection#readme",
+  "bugs": {
+    "url": "https://github.com/yungyu16/pi-ide-selection/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "ide"
+  ],
+  "files": [
+    "src/**/*.ts",
+    "README.md",
+    "docs/**/*.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.86.1",
+    "@earendil-works/pi-tui": ">=0.86.1"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-agent-core": "0.86.1",
+    "@earendil-works/pi-ai": "0.86.1",
+    "@earendil-works/pi-coding-agent": "0.86.1",
+    "@earendil-works/pi-tui": "0.86.1",
+    "@types/node": "22.19.19",
+    "@types/ws": "^8.18.1",
+    "typebox": "1.3.27",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "ws": "^8.21.3"
+  }
+}
