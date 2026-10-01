@@ -1,6 +1,6 @@
 {
   "name": "pi-ide-selection",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "复用 Claude Code IDE 插件，将编辑器选区作为独立上下文消息提供给 Pi。",
   "type": "module",

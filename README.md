@@ -9,12 +9,15 @@
 需要 Pi 0.86.1+、Node.js 22.6+，以及已安装并启用的 Claude Code IDE 插件。Pi 当前工作目录应位于 IDE 打开的项目内。
 
 ```bash
-pi install git:github.com/yungyu16/pi-ide-selection
+pi install git:github.com/yungyu16/pi-ide-selection@v1.0.0
 ```
 
-安装后执行 `/reload` 或重启 Pi。更新时执行：
+安装后执行 `/reload` 或重启 Pi。该命令固定安装 `v1.0.0`，不会自动跟随后续版本；升级时使用 `pi install` 指定新的 tag。
+
+如需跟随 `main` 开发版，安装不带 tag 的来源，再通过 `pi update` 更新：
 
 ```bash
+pi install git:github.com/yungyu16/pi-ide-selection
 pi update git:github.com/yungyu16/pi-ide-selection
 ```
 
